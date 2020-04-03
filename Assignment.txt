@@ -1,0 +1,93 @@
+
+1. Describe the problem: 
+LOCAL BANK comes to us and asked: How can we market accurate type of cards (payment instrument) to a customer that suits his/her spending routines?
+
+ME as Data Scientist: We need to collect data to analyze who suits which type of payment instrument![Debit Card, Gold Credit Card, Platinum Credit Card]
+
+2. Phrase the problem as a question to be answered using data: 
+
+At what level of customer's income and expenses are you (the LOCAL BANK) willing to issue Credit Cards?
+
+1. ANALYTICS APPROACH 
+
+First, we want to understand our current customers
+
+We choose the DESCRIPTIVE and DIAGNOSTIC to statistically understand the demographic of the current customers' demographic, included: 
+Income: What are their range of income? [number $'000]
+Expenses: How much they spend everymonth? [number $'000]
+Age & genders: How old are they and what are their genders? [integer xx, dummy variable Male = 1 Female = 0, others = 3] 
+Location: Where do they live [dummy variable]
+Current payment instrument: What are the current type of cards they have? [dummy variable]
+
+Second, we use Machine Learning Algorithm to identify relationship and trends in the data, using Clustering and Association approaches.
+
+
+2. DATA REQUIREMENTS
+
+Data from banking industry, 
+i. Loyalty: At least 1 year to make sure he/she satisfy with the current instrument.
+
+ii. Location: in big cities so that purchasing habits is more reliable.
+
+iii. Age: greater than 18 but less than 70. We don't market to children or people older than 80
+
+iv. Banking industry must be in the local areas to ensure the analysis relevant to client's requirement.
+
+3. DATA COLLECTION
+
+i. Data can be collected from LOCAL BANK databases
+
+ii. Data can be collected from the National Bureau of Statistics
+
+iii. Data can be collected by sending out the survey to the mass populations.
+
+iv. Using descriptive statistics and visualisation techniques to test data quality.
+
+v. Decided whether the amount of data is enough. If not, collect more, if don't, move to the next steps. 
+
+Note: at this stage it is important to ask client what level of accuracy they want, whether 67%, 90%, 95% or 97%, to determine the size of sample collections.
+
+4. DATA UDNERSTANDING AND PREPARATION
+
+i. DATA UNDERSTANDING: Run Descriptive Analysis to access data quality including: Univariate Statistics, Pairwise Correlations and Histogram to understand the distribution.
+
+ii. DATE PREPARATION: 
+#### Data Duplication issues: If we combine data from many different banks, there's might be duplicated data as one customer can have many cards
+#### Invalid Data issues: There are sub-owner of the cards. For example: children under 18 might have a sub-account associated with their parents. Therefore, the children's data should not be in our table.
+
+#### Formated the data: 
+Income = int [$'000]
+Expense = int [$'000]
+Age = int [years: 18< n <80]
+Genders = dummy variables [1,0]
+Location = dummy variables [Melbourne, Sydney, Adelaide, Brisbane, Hobart] = [MEL, SYD, ADE, BRB, HBA]
+Types of Cards = [Debit, Gold Credit, Platinum Credit] = [DEB, GCR, PCR]
+
+5. MODELING AND EVALUATION
+
+i. Purpose of modeling: Identify the customer financial behaviors and payment instrument they choose. Using descriptive model with machine learning driven
+
+ii. MODELING: base on the descriptive result, construct variables that seems to most affect the customer choice of credit card: income, spending, gender, location,...  
+
+iii. EVALUATION: because descriptive model applied, one of the relationships will be assessed and a testing set with know outcomes can be applied and the model can be refined as needed.
+
+Then, use statistical significance testing to ensure data is properly handled and interpreted within the model. USing ROC curve
+
+Consider the following:
+Classification model performances
+True- positive rate and false-positive rate.
+
+We want the true-positive rate is high but it is also important that the false-positive rate is low. 
+
+Optimum choice will be based on ROC Curve, the further from diagonal line, the better model is.
+
+
+
+
+
+
+
+
+
+
+
