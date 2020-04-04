@@ -1,0 +1,21 @@
+Cover page = [Title, Authors, Contacts, Publication details]
+
+
+Table of Contents = [main headings, lists of tables and figures]
+Abstract of Executive summary = [explaning the crux of your argument in three paragraph or less]
+
+
+Introductory = [Literature review (review of relevant research on the subject matter)
+
+
+Methodology = [introduce research methods and data sources used for analysis. If you collected new data, explain the data collection exercise in some detail]
+
+
+Results = [present your empirical findings (descriptive statistic, illustrative graphics, formally testing your hypothesis, statistical model (regression model, catogorical model), time series data)
+
+
+Discussion section = [where you rely on the power of narrative to enable numbers to communicates your thesis to your readers]
+
+
+Conclusion section = [generalize my specific findigns and take on a rather marketing approach to promote my findings]
+References + Acknowledgement and appendices.
